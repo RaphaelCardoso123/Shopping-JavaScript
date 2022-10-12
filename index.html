@@ -9,23 +9,20 @@
     <title>Document</title>
 </head>
 <body>
-    <main class="geral">
+    <main class="geral"><!--class=flex / flex-column-->
         <h1>Kitanda</h1>
 
         <h2>Lista de Produtos</h2>
-
-            <div id="geral-produtos" class="geral"> 
-                <ul id="lista-produtos"></ul>
+            <div id="geral-produtos" class="geral"> <!--id=content-produtos/class=flex-->
+                <ul id="lista-produtos"></ul><!--id=listProd-->
             </div>
         
         <h2>Cesta</h2>
-
-            <div id="cliente-produto">
-                <ul id="compra-cliente"></ul>
-                
-                    <div id="valor-total" class="geral ajuste">
-                        <span class="geral">Total</span>
-                        <input type="type" id="valor-compra" disabled>
+            <div id="cliente-produto"><!--id=content-lista-produtos-cliente/class=flex-->
+                <ul id="compra-cliente"></ul><!--id=cestaCliente-->
+                    <div id="valor-total" class="geral ajuste"><!--id=content-totalCompras/class=flex flex-row-end-->
+                        <span class="geral">Total</span><!--class=flex-->
+                        <input type="type" id="valor-compra" disabled><!--id=totalCompra-->
                     </div>
             </div>
     </main>

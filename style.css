@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+main{
+    width: 80%;
+    height: auto;   
+    margin: 0 auto;
+    display: flex;
+}
+.geral{
+    display: flex;
+    flex-direction: column;
+}
+div{
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    flex-direction: column;
+}
+h1{
+    padding: 20px;
+    border-bottom: 5px solid red;
+    background-color:sandybrown;
+    color: red;
+}
+h2{
+    margin-top:  10px;
+    padding: 2px;
+    padding-left: 20px;
+    border-bottom: 2px solid red;
+    background-color: darksalmon;
+    color: red;
+}
+.ajuste{
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#valor-compra{
+    font-size: 25px;
+    font-weight: bold;
+}
+span{
+    width: 100px;
+    height: auto;
+    padding: 5px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: sandybrown;
+    color: black;
+}
