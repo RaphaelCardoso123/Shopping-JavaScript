@@ -6,9 +6,19 @@ let produtos = [
     {description: "Maçã", price: 3.30},
     {description: "Laranja", price: 5.70},   
     {description: "Abacaxi", price: 7.00}
-]
+];
+
     let addProduto = [];
         const listaProd = document.querySelector("#lista-produtos");
         const totalComp = document.querySelector("#compra-cliente");
         const valorComp = document.querySelector("#valor-compra");  
-}
+
+(() => {
+    produtos.forEach(produto => {
+        let li = document.createElement("li");
+        li.textContent = produto.description;
+        li.dataset.price = produto.price;
+    })
+})
+    
+} 
