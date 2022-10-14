@@ -18,7 +18,22 @@ let produtos = [
         let li = document.createElement("li");
         li.textContent = produto.description;
         li.dataset.price = produto.price;
-    })
-})
-    
-} 
+        li.addEventListener('click', function() {
+            if(addProduto.indexOf(this.textContent) != -1) {
+                alert(`Você já tem ${this.textContent} na sua cesta!!`);
+            }else {
+                addProduto.push(this.textContent);
+
+                let li2 = document.createElement("li");
+                li2.textContent = this.textContent;
+                totalComp.appendChild(li2);
+
+                const total = Number(valorComp.value) + Number(this.dataset.price);
+                valorComp.value = total.toFixed(2);
+            };
+            });
+            listaProd.appendChild(li);
+        });
+    }
+)();
+};
